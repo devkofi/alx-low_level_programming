@@ -14,7 +14,7 @@ int main(void)
 		{
 			continue;
 		}
-		printf("%c", alphabet);
+		putchar(alphabet);
 		alphabet++;
 	}
 	printf("\n");
