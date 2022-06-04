@@ -10,11 +10,13 @@ int main(void)
 
 	while (alphabet <= 122)
 	{
+		int code = alphabet;
+
 		if (alphabet == 101 || alphabet == 113)
 		{
 			continue;
 		}
-		putchar(alphabet);
+		putchar(code);
 		alphabet++;
 	}
 	printf("\n");
