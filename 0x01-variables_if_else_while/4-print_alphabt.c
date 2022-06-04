@@ -6,18 +6,15 @@
  */
 int main(void)
 {
-	char alphabet = 'a';
+	int counter;
 
-	while (alphabet <= 122)
+	for (counter = 97; counter <= 122; counter++)
 	{
-		int code = alphabet;
-
-		if (alphabet == 101 || alphabet == 113)
+		if (counter == 101 || counter == 113)
 		{
 			continue;
 		}
-		putchar(code);
-		alphabet++;
+		putchar(counter);
 	}
 	printf("\n");
 	return (0);
