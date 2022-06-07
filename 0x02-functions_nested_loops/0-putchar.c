@@ -1,3 +1,4 @@
+#include "main.h"
 #include "_putchar.c"
 /**
  * main - Entry to the main program
