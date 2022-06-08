@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isalpha - Prints 1 if n > 0, Prints 0 if n== 0
+ * print_sign - Prints 1 if n > 0, Prints 0 if n== 0
  *and 1 if otherwise
  *
  * @n: Input for the program
