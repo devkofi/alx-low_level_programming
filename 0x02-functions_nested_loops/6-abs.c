@@ -4,7 +4,7 @@
  *
  * @n: Input value
  *
- * Returns: Returns the absolute the number
+ * Return: Returns the absolute the number
  */
 int _abs(int n)
 {
