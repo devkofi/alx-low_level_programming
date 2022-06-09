@@ -29,7 +29,7 @@ void more_numbers(void)
 
 		}
 
-		_putchar(10);
+		/*_putchar(10);*/
 		i++;
 	}
 }
