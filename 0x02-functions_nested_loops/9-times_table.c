@@ -55,7 +55,7 @@ void details(int j, int k, int remainder, int divisor)
 		_putchar('0' + k);
 	}
 
-	if (j != 9 && k < 10)
+	if (j < 9 && k < 10)
 	{
 		_putchar(44);
 		_putchar(32);
