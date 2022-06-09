@@ -1,4 +1,6 @@
 #include "main.h"
+void refactor_above(int n);
+void refactor_below(int n);
 /**
  * print_to_98 - Prints and stops at 98 with a new line
  *
@@ -8,6 +10,22 @@ void print_to_98(int n)
 {
 	if (n >= 98)
 	{
+		refactor_above(n);
+	}
+	else
+	{
+		refactor_below(n);
+	}
+}
+
+/**
+ * refactor_above - Refactors code
+ * @n: Input
+ * Return: Return void
+ */
+void refactor_above(int n)
+{
+
 		while (n >= 98)
 		{
 			if (n >= 100)
@@ -33,9 +51,16 @@ void print_to_98(int n)
 			}
 			n--;
 		}
-	}
-	else
-	{
+}
+
+/**
+ * refactor_below - refactors code
+ * @n: Input
+ * Return: Return void
+ */
+void refactor_below(int n)
+{
+
 		while (n <= 98)
 		{
 			if (n <= -10 && n > -100)
@@ -74,5 +99,6 @@ void print_to_98(int n)
 			}
 			n++;
 		}
-	}
+
 }
+
