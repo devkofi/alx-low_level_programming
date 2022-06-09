@@ -61,6 +61,10 @@ void details(int j, int k, int remainder, int divisor)
 		_putchar(32);
 		_putchar(32);
 	}
+	else if (j==9)
+	{
+		_putchar(0);
+	}
 	else
 	{
 		_putchar(44);
