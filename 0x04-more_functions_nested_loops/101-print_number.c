@@ -31,6 +31,8 @@ void print_number(int n)
 	}
 	else if (n >= 100 && n < 1000)
 	{
-
+		_putchar('0' + (n / 100));
+		_putchar('0' + ((n % 100) / 10));
+		_putchar('0' + ((n % 100) % 10));
 	}
 }
