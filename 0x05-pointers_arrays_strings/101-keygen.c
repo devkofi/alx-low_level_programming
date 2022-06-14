@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	char keygen[] = "Today! Congrats";
+	char keygen[] = "Tada! Congrats";
 	int i;
 	int length;
 
