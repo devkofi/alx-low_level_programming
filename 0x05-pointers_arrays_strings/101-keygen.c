@@ -16,9 +16,8 @@ int main(void)
 
 	for (i = 0; i < length; i++)
 	{
-		printf("%s", keygen[i]);
+		printf("%c", keygen[i]);
 	}
-	printf("\n");
 
 	return (0);
 
