@@ -6,7 +6,7 @@
  *
  * Return: Returns void
  */
-void main(void)
+int main(void)
 {
 	char keygen[] = "Today! Congrats";
 	int i;
