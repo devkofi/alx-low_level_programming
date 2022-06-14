@@ -18,7 +18,8 @@ int main(void)
 	{
 		printf("%c", keygen[i]);
 	}
-
+	
+	printf("\n");
 	return (0);
 
 }
