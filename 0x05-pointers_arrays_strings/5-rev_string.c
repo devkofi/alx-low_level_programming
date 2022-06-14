@@ -10,21 +10,17 @@
 void rev_string(char *s)
 {
 	int length;
-	int i;		
+	int i;
+	
 	length = strlen(s);
 
 	for (i = 0; i < length; i++)
 	{
-		char temp_value;
-		int c;
+		int temp;
+		temp = *(s + i);
 
-		temp_value = s[i];
-
-		*(s + i) = s[length - 1 - i];
-		*(s + length - 1 - i) = temp_value;
-		
-		c = s[i];
-		_putchar(c);
+		s[i] = *(s + length - i - 1);
+		s[length - i - 1] = temp;
 	}
 
 }
