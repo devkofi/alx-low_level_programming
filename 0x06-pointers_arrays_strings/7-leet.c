@@ -40,10 +40,6 @@ void replaceChar(char *c, char text_lower, char text_upper, char replace)
 		{
 			c[i] = replace;
 		}
-		else
-		{
-			continue;
-		}
 
 	}
 }
