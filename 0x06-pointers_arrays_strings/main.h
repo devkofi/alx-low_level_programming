@@ -13,3 +13,5 @@ char *string_toupper(char *);
 char *cap_string(char *);
 
 char *leet(char *);
+
+void replaceChar(char *c, char text_lower, char text_upper, char replace);
