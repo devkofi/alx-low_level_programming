@@ -15,3 +15,7 @@ char *cap_string(char *);
 char *leet(char *);
 
 void replaceChar(char *c, char text_lower, char text_upper, char replace);
+
+char *rot13(char *);
+
+void replace_rot123_letters(char *c, int lower_range);
