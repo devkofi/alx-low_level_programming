@@ -3,9 +3,9 @@
 /**
  * _memset - Copies byte to memory
  *
- * @s: Pointer to a char 
+ * @s: Pointer to a char
  * @b: Duplicate character
- * @size: Copy size
+ * @n: size to be copied
  *
  * Return: Returns a pointer to char
  */
