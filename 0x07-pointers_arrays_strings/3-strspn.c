@@ -17,14 +17,14 @@ unsigned int _strspn(char *s, char *accept)
 	size = strlen(accept);
 	length = 0;
 
-	for (i = 0; i <= size; i++)
+	for (i = 0; i < size; i++)
 	{
 		int j;
 		int compared_size;
 
 		compared_size = strlen(s);
 
-		for (j = 0; j <= compared_size; j++)
+		for (j = 0; j < compared_size; j++)
 		{
 			if (accept[i] == s[j])
 			{
