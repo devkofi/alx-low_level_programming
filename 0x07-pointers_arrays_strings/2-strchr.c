@@ -11,7 +11,6 @@
  */
 char *_strchr(char *s, char c)
 {
-
 	char *temp;
 	int length;
 	int i;
