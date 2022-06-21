@@ -26,7 +26,7 @@ char *_strpbrk(char *s, char *accept)
 		int accept_length;
 
 		accept_length = strlen(accept);
-		
+
 		if (s[i] == 10 || s[i] == 32 || s[i] == 44)
 		{
 			temp[counter] = s[i];
@@ -42,6 +42,6 @@ char *_strpbrk(char *s, char *accept)
 			}
 		}
 	}
-	
+
 	return (temp);
 }
