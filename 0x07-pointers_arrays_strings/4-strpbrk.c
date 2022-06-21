@@ -14,38 +14,34 @@ char *_strpbrk(char *s, char *accept)
 	char *temp;
 	int length;
 	int i;
-	int k;
-	int l;
 	int counter;
 
 	counter = 0;
 	length = strlen(s);
+	temp = (char *) malloc(length * sizeof(char));
+
 	for (i = 0; i < length; i++)
 	{
 		int j;
 		int accept_length;
 
 		accept_length = strlen(accept);
+		
+		if (s[i] == 10 || s[i] == 32 || s[i] == 44)
+		{
+			temp[counter] = s[i];
+			counter++;
+		}
 
 		for (j = 0; j < accept_length; j++)
 		{
-			++counter;
-			temp = (char *) malloc(counter * sizeof(char));
-		}
-	}
-	for (k = 0; k < length; k++)
-	{
-		int temp_counter;
-
-		temp_counter = 0;
-		for (l = 0; l < (int)strlen(accept); l++)
-		{
-			if (s[k] == accept[l])
+			if (s[i] == accept[j])
 			{
-				temp[temp_counter] = s[k];
-				temp_counter++;
+				temp[counter] = s[i];
+				counter++;
 			}
 		}
 	}
+	
 	return (temp);
 }
