@@ -24,7 +24,7 @@ int _sqrt_recursion(int n)
 	return (sqr_root(1, n));
 }
 /**
- * sqrt - Square root helper
+ * sqrt_recursive - Square root helper
  *
  * @low: lower value
  * @high: higher value
@@ -54,6 +54,14 @@ int sqrt_recursive(int low, int high, int n)
 	return (low);
 }
 
+/**
+ * sqr_root - Square root
+ *
+ * @low: Lower value
+ * @val: Value
+ *
+ * Return: Returns void
+ */
 int sqr_root(int low, int val)
 {
 	int next_val;
