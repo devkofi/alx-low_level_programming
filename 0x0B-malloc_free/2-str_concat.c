@@ -19,14 +19,9 @@ char *str_concat(char *s1, char *s2)
 	array = (char *) malloc(((length_str1 + length_str2) * sizeof(char)));
 	counter = 0;
 
-	if (s2 == NULL || s2 == NULL)
-	{
-		array = "";
-		return (array);
-	}
 	for (i = 0; i < length_str1; i++)
 	{
-		if (s1 == NULL || s2 == NULL)
+		if (s1 == NULL)
 		{
 			break;
 		}
@@ -35,7 +30,7 @@ char *str_concat(char *s1, char *s2)
 
 	for (j = length_str1; j < (length_str1 + length_str2); j++)
 	{
-		if (s1 == NULL || s2 == NULL)
+		if (s2 == NULL)
 		{
 			break;
 		}
