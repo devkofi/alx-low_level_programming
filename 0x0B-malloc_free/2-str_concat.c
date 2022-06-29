@@ -26,11 +26,19 @@ char *str_concat(char *s1, char *s2)
 	}
 	for (i = 0; i < length_str1; i++)
 	{
+		if (s1 == NULL || s2 == NULL)
+		{
+			break;
+		}
 		*(array + i) = *(s1 + i);
 	}
 
 	for (j = length_str1; j < (length_str1 + length_str2); j++)
 	{
+		if (s1 == NULL || s2 == NULL)
+		{
+			break;
+		}
 		*(array + j) = *(s2 + counter);
 		counter++;
 	}
