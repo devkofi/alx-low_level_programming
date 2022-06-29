@@ -14,8 +14,8 @@ char *str_concat(char *s1, char *s2)
 	char *array;
 	int i, j, length_str1, length_str2, counter;
 
-	length_str1 = strlen(s1);
-	length_str2 = strlen(s2);
+	length_str1 = s1 != NULL ? strlen(s1) : 0;
+	length_str2 = s2 != NULL ? strlen(s2) : 0;
 	array = (char *) malloc(((length_str1 + length_str2) * sizeof(char)));
 	counter = 0;
 
@@ -40,6 +40,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (array);
 	}
-
+	free(array);
 	return (NULL);
 }
