@@ -16,6 +16,16 @@ char *argstostr(int ac, char **av)
 
 	ptr = (char *) malloc(ac * sizeof(char));
 
+	if (ac == 0 || av == NULL)
+	{
+		return (NULL);
+	}
+
+	if (ptr == NULL)
+	{
+		return (NULL);
+	}
+
 	for (i = 0; i < (unsigned int)sizeof(ptr); i++)
 	{
 		*(ptr + i) = **av;
