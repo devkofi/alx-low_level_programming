@@ -19,7 +19,7 @@ void *malloc_checked(unsigned int b)
 		exit(98);
 	}
 
-	if (b == NULL)
+	if (b == 0)
 	{
 		exit(98);
 	}
