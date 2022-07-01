@@ -14,9 +14,10 @@ int main(int argc, char *argv[])
 {
 	void printDigit(char *, int number, int base);
 	int multiply;
-	char c[100];
+	char *c;
 
 	multiply = atoi(argv[1]) * atoi(argv[2]);
+	c = (char *) malloc(127 * sizeof(char));
 
 	if (argc > 3)
 	{
